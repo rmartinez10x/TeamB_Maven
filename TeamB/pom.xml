@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Parabank_AppDev</groupId>
+  <artifactId>TeamB</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <name>Parabank_AppDev_Assets</name>
+  <description>Referencing assets from Team A as dependencies for Team B's tests</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>Parabank_Common</groupId>
+  		<artifactId>TeamA</artifactId>
+  		<version>1.0</version>
+  		<type>zip</type>
+  	</dependency>
+  </dependencies>
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.parasoft</groupId>
+          <artifactId>soatest-maven-plugin</artifactId>
+          <version>1.0.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <!-- To use the plugin goals in your POM or parent POM -->
+    <plugins>
+      <plugin>
+        <groupId>com.parasoft</groupId>
+        <artifactId>soatest-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
