@@ -10,7 +10,7 @@ For the Maven run configuration:
 
 2. Add Parameter with
 
-Name "artifact"
+Name "artifact"\
 Value "${GroupId}:${ArtifactId}:${Version}:zip"
  
 **SOAtest Automation:**
