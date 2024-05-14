@@ -8,8 +8,7 @@ For the Maven run configuration:
 
 1. Set the Goals to (clean dependency:unpack)
 
-2. Add Parameter with
-
+2. Add Parameter with\
 Name: "artifact"\
 Value: "${GroupId}:${ArtifactId}:${Version}:zip"\
 Example: Parabank_Common:TeamA:1.0:zip
